@@ -1,0 +1,30 @@
+初始化 SDK  RongIMClient.init("e7x8xycsx6flq"); 传入App Key
+
+
+获取 Token  是 SDK 端用来连接融云服务器的凭证，每个用户连接服务器都需要一个 Token
+
+设置消息监听器 必须设置监听器后，再连接融云服务器
+
+连接服务器   Token 传入 connect 方法，开始连接服务器
+
+发送消息
+发送单聊消息，群组消息，聊天室消息。
+matrix3d(n,n,n,n,n,n,
+n,n,n,n,n,n,n,n,n,n)	定义 3D 转换，使用 16 个值的 4x4 矩阵。
+translate3d(x,y,z)	定义 3D 转化。
+translateX(x)	定义 3D 转化，仅使用用于 X 轴的值。
+translateY(y)	定义 3D 转化，仅使用用于 Y 轴的值。
+translateZ(z)	定义 3D 转化，仅使用用于 Z 轴的值。
+scale3d(x,y,z)	定义 3D 缩放转换。
+scaleX(x)	定义 3D 缩放转换，通过给定一个 X 轴的值。
+scaleY(y)	定义 3D 缩放转换，通过给定一个 Y 轴的值。
+scaleZ(z)	定义 3D 缩放转换，通过给定一个 Z 轴的值。
+rotate3d(x,y,z,angle)	定义 3D 旋转。
+rotateX(angle)	定义沿 X 轴的 3D 旋转。
+rotateY(angle)	定义沿 Y 轴的 3D 旋转。
+rotateZ(angle)	定义沿 Z 轴的 3D 旋转。
+perspective(n)	定义 3D 转换元素的透视视图。
+
+
+
+登录名：xiaobie123456 绑定手机：15554723096 绑定邮箱
