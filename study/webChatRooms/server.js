@@ -17,7 +17,7 @@ function sendFile(response, filePath, fileContents) {
 }
 function serverStatic(response, cache, absPath) {
     if(cache[absPath]) {
-        sendFile(response, cache, cache[absPath]);
+        sendFile(response, absPath, cache[absPath]);
     } else {
         fs.exists(absPath,(esists) => {
             if(esists) {
@@ -55,7 +55,7 @@ function serverStatic(response, cache, absPath) {
 const server = http.createServer((request, response) => {
     let PUBLIC_PATH = path.resolve(__dirname, './public');
     if (request.url === '/') {
-        filePath = PUBLIC_PATH + 'index.html';
+        filePath = PUBLIC_PATH + '/index.html';
     } else {
         filePath = PUBLIC_PATH + request.url;
     }
